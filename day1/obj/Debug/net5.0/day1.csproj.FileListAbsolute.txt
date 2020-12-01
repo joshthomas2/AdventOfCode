@@ -1,0 +1,15 @@
+/Users/joshthomas/Documents/AdventOfCode/day1/bin/Debug/net5.0/day1.deps.json
+/Users/joshthomas/Documents/AdventOfCode/day1/bin/Debug/net5.0/day1.runtimeconfig.json
+/Users/joshthomas/Documents/AdventOfCode/day1/bin/Debug/net5.0/day1.runtimeconfig.dev.json
+/Users/joshthomas/Documents/AdventOfCode/day1/bin/Debug/net5.0/day1.dll
+/Users/joshthomas/Documents/AdventOfCode/day1/bin/Debug/net5.0/ref/day1.dll
+/Users/joshthomas/Documents/AdventOfCode/day1/bin/Debug/net5.0/day1.pdb
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.csprojAssemblyReference.cache
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.AssemblyInfoInputs.cache
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.AssemblyInfo.cs
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.csproj.CoreCompileInputs.cache
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.dll
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/ref/day1.dll
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.pdb
+/Users/joshthomas/Documents/AdventOfCode/day1/obj/Debug/net5.0/day1.genruntimeconfig.cache
