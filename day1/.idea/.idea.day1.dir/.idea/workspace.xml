@@ -13,9 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a7f521e-15a1-4587-ad15-aa1a84026063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-    </list>
+    <list default="true" id="8a7f521e-15a1-4587-ad15-aa1a84026063" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +33,6 @@
   <component name="ProjectId" id="1l4K1YXZT9vp9KyKGpibVtnBU64" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -74,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606850708780</updated>
-      <workItem from="1606850711764" duration="1640000" />
+      <workItem from="1606850711764" duration="1876000" />
     </task>
     <servers />
   </component>
