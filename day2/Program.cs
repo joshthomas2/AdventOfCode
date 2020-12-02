@@ -28,8 +28,9 @@ namespace day2
                 MatchCollection matches = rx.Matches(password);
 
                 int lowLimit = int.Parse(matches.First().Groups[1].Value);
-                    int highLimit = int.Parse(matches.First().Groups[2].Value);
-                    Char letterToCount = char.Parse(matches.First().Groups[3].Value);
+                int highLimit = int.Parse(matches.First().Groups[2].Value);
+                
+                Char letterToCount = char.Parse(matches.First().Groups[3].Value);
                     
                 string[] splitString = password.Split(":");
 
@@ -53,6 +54,7 @@ namespace day2
         public static void SolutionTwo(Regex rx, string[] passwords)
         {
             int validPasswords = 0;
+            
             foreach (string password in passwords)
             {
                 int count = 0;
@@ -60,6 +62,7 @@ namespace day2
 
                 int indexOne = int.Parse(matches.First().Groups[1].Value);
                 int indexTwo = int.Parse(matches.First().Groups[2].Value);
+                
                 Char letterToFind = char.Parse(matches.First().Groups[3].Value);
 
                 string[] splitString = password.Split(":");
