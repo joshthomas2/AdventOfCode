@@ -37,9 +37,9 @@ namespace day7
 
             Console.WriteLine("PART 1:");
             Console.WriteLine(bags.Count);
-            
-                        
+
             Console.WriteLine("PART 2");
+            
             // -1 as we aren't including the first "shiny gold" bag
             int individualBags = CountIndividualBags(ruleDictionary, "shiny gold", 1) - 1;
             Console.WriteLine(individualBags);
