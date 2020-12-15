@@ -13,6 +13,7 @@ namespace day11
             int width = file[0].Length;
             int height = file.Length;
             char[,] seatPlan = new Char[height, width];
+            int occupiedSeats = 0;
 
             for (var row = 0; row < height; row++)
             {
@@ -20,19 +21,24 @@ namespace day11
                 for (int col = 0; col < width; col++)
                 {
                     seatPlan[row, col] = file[row][col];
+
+                    if (seatPlan[row, col] == '#')
+                    {
+                        occupiedSeats++;
+                    }
                 }
             }
             
             //Part 1:
             Console.WriteLine("Part 1 occupied seats:");
-            Console.WriteLine(CountOccupiedSeats(seatPlan, height, width, false, 4));
+            Console.WriteLine(CountOccupiedSeats(seatPlan, height, width, false, 4, occupiedSeats));
             
             //Part 2:
             Console.WriteLine("Part 2 occupied seats:");
-            Console.WriteLine(CountOccupiedSeats(seatPlan, height, width, true, 5));
+            Console.WriteLine(CountOccupiedSeats(seatPlan, height, width, true, 5, occupiedSeats));
         }
 
-        public static int CountOccupiedSeats(char[,] seatPlan, int height, int width, bool part2, int tolerance)
+        public static int CountOccupiedSeats(char[,] seatPlan, int height, int width, bool part2, int tolerance, int occupiedSeats)
         {
             bool notEqual;
             do
@@ -51,6 +57,7 @@ namespace day11
                                 if (OccupiedSeatChecker(row, col, seatPlan, part2) == 0)
                                 {
                                     newSeatPlan[row, col] = '#';
+                                    occupiedSeats++;
                                     notEqual = true;
                                 }
                                 break;
@@ -59,6 +66,7 @@ namespace day11
                                 if (OccupiedSeatChecker(row, col, seatPlan, part2) >= tolerance)
                                 {
                                     newSeatPlan[row, col] = 'L';
+                                    occupiedSeats--;
                                     notEqual = true;
                                 }
                                 break;
@@ -69,15 +77,6 @@ namespace day11
                 seatPlan = (char[,]) newSeatPlan.Clone();
             } while (notEqual);
             
-            int occupiedSeats = 0;
-            foreach (var c in seatPlan)
-            {
-                if (c == '#')
-                {
-                    occupiedSeats++;
-                }
-            }
-
             return occupiedSeats;
         }
 
