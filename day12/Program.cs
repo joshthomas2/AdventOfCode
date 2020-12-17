@@ -88,32 +88,20 @@ namespace day12
                     partTwoPosition['x'] += value * x;
                 }
 
-                if (action[0] == 'W')
+                switch (action[0])
                 {
-                    partOnePosition[action[0]] += value;
-                    
-                    x -= value;
-                }
-
-                if (action[0] == 'E')
-                {
-                    partOnePosition[action[0]] += value;
-                    
-                    x += value;
-                }
-
-                if (action[0] == 'N')
-                {
-                    partOnePosition[action[0]] += value;
-                    
-                    y += value;
-                }
-
-                if (action[0] == 'S')
-                {
-                    partOnePosition[action[0]] += value;
-                    
-                    y -= value;
+                    case 'W':
+                        x -= value;
+                        break;
+                    case 'E':
+                        x += value;
+                        break;
+                    case 'N':
+                        y += value;
+                        break;
+                    case 'S':
+                        y -= value;
+                        break;
                 }
             }
         }
